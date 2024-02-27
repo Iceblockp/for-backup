@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class=" p-10 h-[1600vh]">
+
+    <!-- <h1 id="heading" class="text-3xl active:bg-gray-200 select-none cursor-pointer border-2 p-10 text-center border-gray-900 m-10"> Click Me</h1> -->
+
+    <!-- <input type="text" id="input" class="border-2 p-2 border-gray-900"> -->
+
+    <!-- <input type="file" id="nation" multiple class="border border-black"> -->
+
+    <!-- <select name="" id="nation">
+        <option value="mm">mm</option>
+        <option value="en">en</option>
+        <option value="ch">ch</option>
+        <option value="jp">jp</option>
+        <option value="ph">ph</option>
+    </select> -->
+
+
+
+
+
+    <div class="grid grid-cols-3 gap-10">
+
+        <div class="col-span-1">
+            <form class="" id="controller">
+                <div class="mb-6">
+                    <label for="textInput"
+                        class="block mb-2 text-sm font-medium text-gray-900 removedark:text-white">Your email</label>
+                    <input type="text" id="textInput"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 removedark:bg-gray-700 removedark:border-gray-600 removedark:placeholder-gray-400 removedark:text-white removedark:focus:ring-blue-500 removedark:focus:border-blue-500"
+                        >
+                </div>
+
+                <div class="mb-6">
+                    <label for="colorInput"
+                        class="block mb-2 text-sm font-medium text-gray-900 removedark:text-white">Select Color</label>
+                    <input type="color" id="colorInput"
+                        class="bg-gray-50 border h-14 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 removedark:bg-gray-700 removedark:border-gray-600 removedark:placeholder-gray-400 removedark:text-white removedark:focus:ring-blue-500 removedark:focus:border-blue-500"
+                        >
+                </div>
+
+                <div class="mb-6">
+                    <label for="fontSizeRange"
+                        class="block mb-2 text-sm font-medium text-gray-900 removedark:text-white">Font Size</label>
+                    <input value="1" min="14" max="100" type="range" id="fontSizeRange"
+                        class=" rounded-lg appearance-none h-2 cursor-pointer bg-gray-200 focus:ring-blue-500 focus:border-blue-500 block w-full  removedark:bg-gray-700 removedark:border-gray-600 removedark:placeholder-gray-400 removedark:text-white removedark:focus:ring-blue-500 removedark:focus:border-blue-500"
+                        >
+                </div>
+
+                <div class="mb-6">
+
+                    <label for="fontSelect"
+                        class="block mb-2 text-sm font-medium text-gray-900 removedark:text-white">Select Font</label>
+                    <select id="fontSelect"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 removedark:bg-gray-700 removedark:border-gray-600 removedark:placeholder-gray-400 removedark:text-white removedark:focus:ring-blue-500 removedark:focus:border-blue-500" required>
+                        <option selected value="" >Select Font</option>
+                        <option value="Armalite Rifle Regular">Armalite Rifle Regular</option>
+                        <option value="Ashley Medium">Ashley Medium</option>
+                        <option value="Balzac Medium">Balzac Medium</option>
+                        <option value=" Arial"> Arial</option>
+                    </select>
+
+                </div>
+
+                <div class="mb-6">
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
+
+                </div>
+
+                
+
+
+            </form>
+
+        </div>
+        <div class="col-span-2">
+            <div class="text-black" id="output"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./js/event.js"></script>
+</body>
+
+</html>

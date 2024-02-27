@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #result{
+            width: 200px;
+            display: inline-block;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Area Calculator</h1>
+
+    <div class="">
+        <p id="result">
+            Result : <span id="output"></span>
+        </p>
+        <button onclick="storeResult()">Store</button>
+        <button onclick="clearHistory()">Clear</button>
+    </div>
+    <div class="">
+        <input type="number" id="width" placeholder="width in ft">
+        <input type="number" id="breadth" placeholder="breadth in ft">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <ul id="record">
+        <li>15ft x 50ft = 750ft</li>
+    </ul>
+    
+
+    <script src="area.js"></script>
+</body>
+</html>
